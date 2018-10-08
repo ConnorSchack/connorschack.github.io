@@ -4,15 +4,75 @@
 <head>
 	<title>Connor Schack's Terminal</title>
 	<!-- link to main stylesheet -->
-	<link rel="stylesheet" type="text/css" href="/css/main.cs
+	<style>
+		body {
+ 			background-color: black;
+  			padding-top: 10px;
+		}
+		p {
+ 			color: green;
+  			font-family: "Courier";
+  			font-size: 20px;
+  			margin: 10px 0 0 10px;
+  			white-space: nowrap;
+ 			overflow: hidden;
+  			width: 0;
+  			opacity: 0;
+  			animation: type 4s steps(60, end) forwards;
+  			-webkit-user-select: none;
+ 			user-select: none;
+		}
+		p:nth-child(2) {
+			animation-delay: 1s;
+		}
+		p:nth-child(3) {
+  			animation-delay: 2s;
+		}
+		p:nth-child(4) {
+  			animation-delay: 3s;
+		}
+		p:nth-child(5) {
+  			animation-delay: 4s;
+		}
+		p:nth-child(6) {
+  			animation-delay: 5s;
+  			margin-bottom: 25px;
+		}
+		p:nth-child(7) {
+  			animation-delay: 6s;
+		}
+		p:nth-child(7) {
+  			animation-duration: 0.8s;
+		}
+
+@keyframes type {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    width: 30em;
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+::selection {
+  background: black;
+}
+</style>
 </head>
 <body>
   <nav>
     <ul>
-       <li><a href="/">Home</a></li>
-	     <li><a href="/about">About</a></li>
-       <li><a href="/cv">CV</a></li>
-       <li><a href="/blog">Blog</a></li>
+	<li><a href="/about">About</a></li>
+       <li><a href="/resume">Resume</a></li>
+       <li><a href="/coursework">Coursework</a></li>
     </ul>
   </nav>
 	<p>just testing a few things</p>
